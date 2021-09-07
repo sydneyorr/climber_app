@@ -14,7 +14,7 @@ const Climb = (props) => {
   } = props;
 
   return (
-    <div>
+    <div style={{ margin: "10px", border: "3px solid blue" }}>
       <h1>{id} - {name}</h1>
         <p>{rating}</p>
         <p>{location}</p>

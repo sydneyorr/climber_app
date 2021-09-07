@@ -42,7 +42,7 @@ const deleteClimb = async (id) => {
 
 const updateClimb = async (climb) => {
   try {
-    let res = await axios.put(`api/climbs/${climb.id}`, climb)
+    await axios.put(`api/climbs/${climb.id}`, climb)
     let newClimbs = climbs.map((c)=> (c.id === climb.id ? climb : c))
     setClimbs(newClimbs);
   } catch {

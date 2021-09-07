@@ -16,7 +16,7 @@ const ClimbForm = (props) => {
   }};
 
   return (
-    <div>
+    <div style={{ margin: "10px", border: "3px solid pink" }}>
       <h1>{props.id ? "Edit" : "New Climb"}</h1>
       <form onSubmit={handleSubmit}>
         <p>Name:</p>
