@@ -3,7 +3,7 @@ import Climbs from "./components/Climbs"
 import axios from "axios"
 import ClimbForm from "./components/ClimbForm";
 
-const App = () => {
+const AppClimbs = () => {
   const [climbs, setClimbs] = useState([]);
   const [showForm, setShowForm] = useState(false);
 
@@ -59,4 +59,4 @@ const updateClimb = async (climb) => {
   );
 };
 
-export default App;
+export default AppClimbs;

@@ -13,6 +13,8 @@ const ClimbForm = (props) => {
     } else {
     props.addClimb({ name, rating, location })
     setName("")
+    setRating("")
+    setLocation("")
   }};
 
   return (

@@ -13,6 +13,11 @@ class Api::ClimbsController < ApplicationController
     end
   end
 
+  def show
+    climb = Climb.find(params[:id])
+    render json: climb
+  end
+
   def update
     climb = Climb.find(params[:id])
     if climb.update(climbs_params)
